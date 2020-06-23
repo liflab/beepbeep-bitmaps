@@ -66,5 +66,21 @@
       </files>
       <bundle>false</bundle>
     </dependency>
+    <dependency>
+      <!-- Bitmap library -->
+      <name>Bitmap libraries</name>
+      <classname>com.googlecode.javaewah32.Buffer32</classname>
+      <files>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/extendedset-1.3.10-SNAPSHOT-sources.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/extendedset-1.3.10-SNAPSHOT.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/JavaEWAH-1.1.5-SNAPSHOT-javadoc.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/JavaEWAH-1.1.5-SNAPSHOT-sources.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/JavaEWAH-1.1.5-SNAPSHOT.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/RoaringBitmap-0.5.14-SNAPSHOT-javadoc.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/RoaringBitmap-0.5.14-SNAPSHOT-sources.jar</jar>
+        <jar>http://liflab.github.io/beepbeep-bitmaps/deps/RoaringBitmap-0.5.14-SNAPSHOT.jar</jar>
+      </files>
+      <bundle>false</bundle>
+    </dependency>
   </dependencies>
 </build>
