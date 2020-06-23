@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  Configuration file for AntRun.
+  
+  Use this file to override the default properties contained
+  in build.xml. For example, to override the build.jar.filename
+  property (which sets the name of the compiled jar file), add
+  an element
+  
+  <jar>
+    <filename>foo</filename>
+  </jar>
+  
+  inside the <build> element.
+  
+  **Caveat emptor:** in some cases, changing this file and running ant
+  again will result in Ant using a cached version of the old file! Run
+  "ant dummy" to make sure that the correct data is being read. Otherwise
+  you might need to run "ant clean" and start over.
+-->
+<build>
+  <!-- Uncomment any of these if you want to override the build
+       script's default values -->
+
+  <!-- The project's name -->
+  <name>LTL Bitmap Palette</name>
+  
+  <!-- The project's author. Currently this only
+  shows up in the footer of the Javadoc documentation. -->
+  <author>Sylvain Hall&#233;</author>
+  
+  <!-- The project's version number -->
+  <version>0.1</version>
+  
+  <!-- Installation folders -->
+  <docdir>docs</docdir>
+  <libdir>Source/Core/lib</libdir>
+  <depdir>Source/Core/dep</depdir>
+  <srcdir>Source/Core/src</srcdir>
+  <test>
+    <libdir>Source/CoreTest/lib</libdir>
+    <depdir>Source/CoreTest/dep</depdir>
+    <srcdir>Source/CoreTest/src</srcdir>
+  </test>
+  
+  <!-- The project's main class -->
+  <mainclass>ca.uqac.lif.cep.ltl.bitmap.Main</mainclass>
+  
+  <!-- Output jar -->
+  <jar>
+    <filename>pattheminer.jar</filename>
+    <withdoc>false</withdoc>
+    <withsrc>false</withsrc>
+  </jar>
+  
+  <!--
+    Write JAR dependencies here.
+  -->
+  <dependencies>
+    <dependency>
+      <!-- Latest version of BeepBeep's core -->
+      <name>BeepBeep</name>
+      <classname>ca.uqac.lif.cep.Processor</classname>
+      <files>
+        <zip>https://github.com/liflab/beepbeep-3/releases/download/v0.10.3-alpha/beepbeep-3-0.10.3-alpha.zip</zip>
+      </files>
+      <bundle>false</bundle>
+    </dependency>
+  </dependencies>
+</build>
