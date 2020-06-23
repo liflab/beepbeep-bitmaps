@@ -17,6 +17,7 @@
  */
 
 /**
+ * Implementation of the LTL operators as functions on bitmaps.
  * @author Kun Xie
  */
 package ca.uqac.lif.cep.ltl.bitmaps;
